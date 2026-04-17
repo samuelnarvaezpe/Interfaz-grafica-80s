@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo 80s</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="contenedor">
+      <header>
+        <h1>Catálogo súper sencillo de los 80s</h1>
+        <p>
+          5 filas x 7 columnas. Cada fila representa un tema: Tecnología, Música,
+          Entretenimiento, Juguetes y Moda.
+        </p>
+      </header>
+
+      <section id="catalogo" class="catalogo" aria-label="Catálogo de tarjetas"></section>
+    </main>
+
+    <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal__contenido">
+        <button id="cerrarModal" class="modal__cerrar" aria-label="Cerrar">×</button>
+        <p id="modalTema" class="modal__tema"></p>
+        <h2 id="modalTitulo"></h2>
+        <img id="modalImagen" alt="" />
+        <p id="modalDescripcion"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
